@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ELG - Main Page</title>
+</head>
+<link rel="stylesheet" href="styles/style.css">
+
+
+<body id="n-body">
+    <!--! HEADER SECTION START-->
+    <header id="header" class="header">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo" id="navbar-logo-img">
+        </a>
+        <nav class="navbar">
+            <a href="#home" class="nav-button">Home</a>
+            <a href="#about" class="nav-button">About Us</a>
+            <a href="#contact" class="nav-button">Contact</a>
+            <a href="#contact" class="nav-button">Log in</a>
+        </nav>
+
+        <div class="buttons">
+            <button onmousedown='document.querySelector(".fa-search").style.fontSize="1.55rem"' onmouseup='document.querySelector(".fa-search").style.fontSize="1.7rem"' id="searchbtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <button id="menu-btn" onmousedown='document.querySelector(".fa-bars").style.fontSize="1.55rem"' onmouseup='document.querySelector(".fa-bars").style.fontSize="1.7rem"'>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <div class="search-form" id="searchbar">
+            <input type="text" placeholder="search here" id="search-box" class="search-input">
+            <i class="fas fa-search"></i>
+        </div>
+
+
+    </header>
+    <!--! HEADER SECTION END-->
+
+    <!--! HOME SECTION START-->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>ELG SOFTWARE COMPANY</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula, urna ut aliquet imperdiet, arcu
+                dolor
+                facilisis lectus, vitae viverra neque nulla sed enim.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <!--! HOME SECTION END-->
+
+    
+
+    <!--! ABOUT US SECTION START-->
+    <section class="about" id="about">
+        <h1 class="heading">about <span>us</span></h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/about.jpg" alt="about">
+            </div>
+            <div class="content">
+                <h3>Exploring the Innovations of ELG Software: Revolutionizing the Digital Landscape</h3>
+                <p>ELG Software is a software company that provides its customers with unique solutions. With
+                    a creative and innovative approach, the company aims to transform the digital landscape by pushing
+                    the boundaries of technology. Managed by a professional team, ELG Software collaborates
+                    with industry leaders to develop user-friendly and effective software products. The company's
+                    mission is to help its customers optimize their business processes, increase efficiency, and gain a
+                    competitive advantage.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
+    <!--! ABOUT US SECTION END-->
+
+    <!--! contact section start-->
+    <section class="contact" id="contact">
+        <h1 class="heading">contact <span>us</span></h1>
+        <div class="row">
+            <form>
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-square-envelope"></i>
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <input type="submit" class="btn" value="contact now">
+            </form>
+
+            <div class="login-section">
+                <h3><span id="in-span">sign in</span> / <span id="up-span">sign up</span></h3>
+                <form class="sign-in-form active">
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-envelope mail-icon"></i>
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-lock in-icon"></i>
+                    <input class="in-pass" type="password" placeholder="Password">
+                </div>
+                <input type="submit" class="btn" value="sign in">
+                </form>
+
+                <form class="sign-up-form">
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-envelope mail-icon"></i>
+                    <input type="email" placeholder="E-Mail">
+                </div>
+                <div class="inputBox">
+                    <i class="fas fa-lock up-icon"></i>
+                    <input class="up-pass" type="password" placeholder="Password">
+                </div>
+                <input type="submit" class="btn" value="sign up">
+
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    <!--! contact section end-->
+
+    <!--! footer section start-->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Search">
+            <button class="btn btn-primary">search</button>
+        </div>
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>
+            <a href="#" class="fab fa-discord"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+        <div class="links">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="credit"><span>&copy; 2023 MoaP.</span> All rights reserved.</div>
+    </section>
+    <!--! footer section end-->
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
